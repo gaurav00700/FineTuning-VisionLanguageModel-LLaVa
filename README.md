@@ -1,6 +1,6 @@
 # 🚀 ORPO Fine-Tuning Pipeline for LLaVA-style Vision-Language Models
 
-This repository provides a fully configurable and extensible pipeline to fine-tune **FastVision LLaVA models** using the **ORPO (Odd Ratio Preference Optimization)** training paradigm with support for **LoRA**, **QLoRA**, and **Full finetuning** strategies. It uses opensource Multimodal modal language model and Dataset from Huggingface to finetune the model leveraging RLHF.
+This repository provides a fully configurable and extensible pipeline to fine-tune **FastVision LLaVA models** using the **ORPO (Odd Ratio Preference Optimization)** training paradigm with support for **LoRA**, **QLoRA**, and **Full finetuning** strategies. It uses opensource Multimodal Language Modal language model and Dataset from Huggingface to finetune the model leveraging **RLHF**.
 
 ---
 
@@ -208,6 +208,7 @@ model, tokenizer = FastVisionModel.from_pretrained(
 ## 🔮 Future Improvements
 
 * [ ] Further experiments with finetuning different layers
+* [ ] Support for exporting models to GGUF/llama.cpp
 * [ ] Add a UI-based inference tool for visualization
 
 ---
