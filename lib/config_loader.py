@@ -18,6 +18,8 @@ class Config(BaseModel):
     dtype: Optional[str] = None  # e.g., "float16", "bfloat16", or None
     num_train_epochs: Optional[int] = None
     max_steps: int = 100
+    learning_rate: float = 1e-6
+    warmup_ratio: float = 0.1
 
     # === Output and Logging ===
     output_dir: str = "outputs"

@@ -50,9 +50,9 @@ Create a YAML config file like `configs/train_eval.yaml`:
 
 ```yaml
 base_model: "llava-hf/llava-v1.6-mistral-7b"
-dataset_name: "your_dataset_script_or_path"
+dataset_name: "openbmb/RLAIF-V-Dataset"
 output_dir: "./outputs"
-run_name: "llava-lora-run_name"
+run_name: "llava-v1.6-mistral-7b"
 load_in_4bit: true
 load_in_8bit: false
 full_finetuning: false
@@ -67,7 +67,7 @@ lora_dropout: 0.0
 max_seq_length: 4096
 evaluation: true
 num_train_epochs: 1
-max_steps: 1000
+max_steps: 100
 ```
 
 ---
@@ -213,7 +213,8 @@ model, tokenizer = FastVisionModel.from_pretrained(
 ## 🔮 Future Improvements
 
 * [ ] Further experiments with finetuning different layers
-* [ ] Support for exporting models to GGUF/llama.cpp
+* [ ] Hyperparameter tuning using optimization technique such Grid search, random search or Bayesian Optimization 
+* [ ] Support for exporting models to GGUF/llama.cpp for local serving of VLM through Ollama/lamma.cpp and vLLM
 * [ ] Add a UI-based inference tool for visualization
 
 ---
