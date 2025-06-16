@@ -12,6 +12,11 @@ This repository provides a fully configurable and extensible pipeline to fine-tu
 * **`configs/*.yaml`** — Configuration files for different experimental setups (LoRA, QLoRA, full finetuning, etc.).
 
 ---
+## 🖇️ Pipeline
+
+![](assets/Pipeline.png)
+
+---
 
 ## 📦 Installation
 
